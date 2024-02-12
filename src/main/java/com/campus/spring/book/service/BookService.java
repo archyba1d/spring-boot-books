@@ -13,11 +13,11 @@ public class BookService {
     static List<BookEntity> bookStorage = new ArrayList<>();
 
     public BookService() {
-        fillStorage();
+        fillStore();
     }
 
 
-    private void fillStorage(){
+    private void fillStore(){
         Random random = new Random();
         for(int i = 0; i < 100; i++) {
             BookEntity book = new BookEntity();

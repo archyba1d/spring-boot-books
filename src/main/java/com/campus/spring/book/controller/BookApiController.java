@@ -28,7 +28,7 @@ public class BookApiController {
         return bookService.all();
     }
 
-    @GetMapping("/api/v1/book/(id)")
+    @GetMapping("/api/v1/book/{id}")
     public BookEntity byId(@PathVariable Integer id){
         return bookService.byId(id).orElseThrow(ResourceNotFoundException::new);
     }
